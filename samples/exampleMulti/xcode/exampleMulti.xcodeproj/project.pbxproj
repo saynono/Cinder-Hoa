@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720219952D00008149E2 /* AVFoundation.framework */; };
+		006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006D720319952D00008149E2 /* CoreMedia.framework */; };
+		0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0091D8F80E81B9330029341E /* OpenGL.framework */; };
+		00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784AF0FF439BC000DE1D7 /* Accelerate.framework */; };
+		00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */; };
+		00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B10FF439BC000DE1D7 /* AudioUnit.framework */; };
+		00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B784B20FF439BC000DE1D7 /* CoreAudio.framework */; };
+		00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995581B128DF400A5C623 /* IOKit.framework */; };
+		00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B995591B128DF400A5C623 /* IOSurface.framework */; };
+		4E254CE34C4A4F80BAAD6EA2 /* HoaElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A5E1514984C2395F7270A /* HoaElement.cpp */; };
+		5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5323E6B10EAFCA74003A9687 /* CoreVideo.framework */; };
+		66DC7976F0654256B6CB84D4 /* CinderApp.icns in Resources */ = {isa = PBXBuildFile; fileRef = DF2BE0790C8E4B38A9FF25FD /* CinderApp.icns */; };
+		7D2F90B4FE134108951E4E9A /* HoaNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66BC097DD76B4DFAA749368E /* HoaNode.cpp */; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		AE7A1516A81E406E90350F55 /* exampleMultiApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A28BDC1E50E3475092AA0DDB /* exampleMultiApp.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		006D720219952D00008149E2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		006D720319952D00008149E2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0091D8F80E81B9330029341E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		00B784AF0FF439BC000DE1D7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00B784B10FF439BC000DE1D7 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		00B784B20FF439BC000DE1D7 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		00B995581B128DF400A5C623 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		00B995591B128DF400A5C623 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		0BDA5185E04845C4A061557A /* Processor.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Processor.hpp; path = "../../../lib/HoaLibrary-Light/sources/Processor.hpp"; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		11A4FA796C89441EB27DCF0F /* Tools.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Tools.hpp; path = "../../../lib/HoaLibrary-Light/sources/Tools.hpp"; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2A3B60050A134CFB8D9F7515 /* Projector.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Projector.hpp; path = "../../../lib/HoaLibrary-Light/sources/Projector.hpp"; sourceTree = "<group>"; };
+		3BF51EEC7ADB4F7E85E7F559 /* HrirIrc1002C3D.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = HrirIrc1002C3D.hpp; path = "../../../lib/HoaLibrary-Light/sources/HrirIrc1002C3D.hpp"; sourceTree = "<group>"; };
+		4498BBC4634D45D58AD91A57 /* Optim.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Optim.hpp; path = "../../../lib/HoaLibrary-Light/sources/Optim.hpp"; sourceTree = "<group>"; };
+		4B20C7450B914308B8DD79EE /* Source.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Source.hpp; path = "../../../lib/HoaLibrary-Light/sources/Source.hpp"; sourceTree = "<group>"; };
+		4C429A7FBAE64224AADADAD8 /* Signal.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Signal.hpp; path = "../../../lib/HoaLibrary-Light/sources/Signal.hpp"; sourceTree = "<group>"; };
+		4D3A5E1514984C2395F7270A /* HoaElement.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = HoaElement.cpp; path = ../../../src/HoaElement.cpp; sourceTree = "<group>"; };
+		52AD3E941C514207BE92E852 /* Hoa.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Hoa.hpp; path = "../../../lib/HoaLibrary-Light/sources/Hoa.hpp"; sourceTree = "<group>"; };
+		5323E6B10EAFCA74003A9687 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		53A7D9C5B83A4A02AE907153 /* Hrir.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Hrir.hpp; path = "../../../lib/HoaLibrary-Light/sources/Hrir.hpp"; sourceTree = "<group>"; };
+		65BA28116F8D418DB4858CE8 /* Decoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Decoder.hpp; path = "../../../lib/HoaLibrary-Light/sources/Decoder.hpp"; sourceTree = "<group>"; };
+		664C0EAB307A41CB848F09C8 /* Resources.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Resources.h; path = ../include/Resources.h; sourceTree = "<group>"; };
+		66BC097DD76B4DFAA749368E /* HoaNode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = HoaNode.cpp; path = ../../../src/HoaNode.cpp; sourceTree = "<group>"; };
+		6A43AC0B319D41B3B4E393B2 /* Voronoi.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Voronoi.hpp; path = "../../../lib/HoaLibrary-Light/sources/Voronoi.hpp"; sourceTree = "<group>"; };
+		70198E094B624826BFE384F9 /* Math.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Math.hpp; path = "../../../lib/HoaLibrary-Light/sources/Math.hpp"; sourceTree = "<group>"; };
+		7888D34B6D92411D97BB9EA4 /* Scope.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Scope.hpp; path = "../../../lib/HoaLibrary-Light/sources/Scope.hpp"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* exampleMulti.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exampleMulti.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28BDC1E50E3475092AA0DDB /* exampleMultiApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = exampleMultiApp.cpp; path = ../src/exampleMultiApp.cpp; sourceTree = "<group>"; };
+		A461F25AA1DC40089D13AC6F /* Meter.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Meter.hpp; path = "../../../lib/HoaLibrary-Light/sources/Meter.hpp"; sourceTree = "<group>"; };
+		B478CEDAFF7B43A3B3CB7EA1 /* Wider.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Wider.hpp; path = "../../../lib/HoaLibrary-Light/sources/Wider.hpp"; sourceTree = "<group>"; };
+		C21B0F1AD99347BA9CB4758B /* HrirIrc1002C2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = HrirIrc1002C2D.hpp; path = "../../../lib/HoaLibrary-Light/sources/HrirIrc1002C2D.hpp"; sourceTree = "<group>"; };
+		C4B531B19EAE408091509D9C /* Exchanger.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Exchanger.hpp; path = "../../../lib/HoaLibrary-Light/sources/Exchanger.hpp"; sourceTree = "<group>"; };
+		C929BC6BF80044E09C206D20 /* Vector.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Vector.hpp; path = "../../../lib/HoaLibrary-Light/sources/Vector.hpp"; sourceTree = "<group>"; };
+		D19796F3F41A4BF18E22B00F /* Defs.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Defs.hpp; path = "../../../lib/HoaLibrary-Light/sources/Defs.hpp"; sourceTree = "<group>"; };
+		D97691A2DD2B4F358F4F8016 /* Recomposer.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Recomposer.hpp; path = "../../../lib/HoaLibrary-Light/sources/Recomposer.hpp"; sourceTree = "<group>"; };
+		DC419794076744648FA89202 /* Planewaves.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Planewaves.hpp; path = "../../../lib/HoaLibrary-Light/sources/Planewaves.hpp"; sourceTree = "<group>"; };
+		DF2BE0790C8E4B38A9FF25FD /* CinderApp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = CinderApp.icns; path = ../resources/CinderApp.icns; sourceTree = "<group>"; };
+		E11EA98A586F4A53AE03A1F5 /* Encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Encoder.hpp; path = "../../../lib/HoaLibrary-Light/sources/Encoder.hpp"; sourceTree = "<group>"; };
+		E61DE24EEC5440B4BCCACBD3 /* Rotate.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Rotate.hpp; path = "../../../lib/HoaLibrary-Light/sources/Rotate.hpp"; sourceTree = "<group>"; };
+		EDBA1601C0424E39B81BBFB8 /* Harmonics.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Harmonics.hpp; path = "../../../lib/HoaLibrary-Light/sources/Harmonics.hpp"; sourceTree = "<group>"; };
+		F8B6747D6D8147DFA04E3645 /* exampleMulti_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = exampleMulti_Prefix.pch; sourceTree = "<group>"; };
+		FBF01DDE7BC94425895FB27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5737C51DDA4E8F00457667 /* HoaElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaElement.h; path = ../../../src/HoaElement.h; sourceTree = "<group>"; };
+		FF5737C61DDA4E8F00457667 /* HoaNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaNode.h; path = ../../../src/HoaNode.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				006D720419952D00008149E2 /* AVFoundation.framework in Frameworks */,
+				006D720519952D00008149E2 /* CoreMedia.framework in Frameworks */,
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				0091D8F90E81B9330029341E /* OpenGL.framework in Frameworks */,
+				5323E6B20EAFCA74003A9687 /* CoreVideo.framework in Frameworks */,
+				00B784B30FF439BC000DE1D7 /* Accelerate.framework in Frameworks */,
+				00B784B40FF439BC000DE1D7 /* AudioToolbox.framework in Frameworks */,
+				00B784B50FF439BC000DE1D7 /* AudioUnit.framework in Frameworks */,
+				00B784B60FF439BC000DE1D7 /* CoreAudio.framework in Frameworks */,
+				00B9955A1B128DF400A5C623 /* IOKit.framework in Frameworks */,
+				00B9955B1B128DF400A5C623 /* IOSurface.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01B97315FEAEA392516A2CEA /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				D77B7D25946941BEB04A8DC5 /* Cinder-HOA */,
+			);
+			name = Blocks;
+			sourceTree = "<group>";
+		};
+		080E96DDFE201D6D7F000001 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A28BDC1E50E3475092AA0DDB /* exampleMultiApp.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				006D720219952D00008149E2 /* AVFoundation.framework */,
+				006D720319952D00008149E2 /* CoreMedia.framework */,
+				00B784AF0FF439BC000DE1D7 /* Accelerate.framework */,
+				00B784B00FF439BC000DE1D7 /* AudioToolbox.framework */,
+				00B784B10FF439BC000DE1D7 /* AudioUnit.framework */,
+				00B784B20FF439BC000DE1D7 /* CoreAudio.framework */,
+				5323E6B10EAFCA74003A9687 /* CoreVideo.framework */,
+				0091D8F80E81B9330029341E /* OpenGL.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				00B995581B128DF400A5C623 /* IOKit.framework */,
+				00B995591B128DF400A5C623 /* IOSurface.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* exampleMulti.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* exampleMulti */ = {
+			isa = PBXGroup;
+			children = (
+				01B97315FEAEA392516A2CEA /* Blocks */,
+				29B97315FDCFA39411CA2CEA /* Headers */,
+				080E96DDFE201D6D7F000001 /* Source */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = exampleMulti;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				664C0EAB307A41CB848F09C8 /* Resources.h */,
+				F8B6747D6D8147DFA04E3645 /* exampleMulti_Prefix.pch */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF2BE0790C8E4B38A9FF25FD /* CinderApp.icns */,
+				FBF01DDE7BC94425895FB27E /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3713E715153549299AA75B46 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				62663CD782554D69B5980998 /* HoaLibrary-Light */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		62663CD782554D69B5980998 /* HoaLibrary-Light */ = {
+			isa = PBXGroup;
+			children = (
+				99A95986598C49A5A71E7098 /* sources */,
+			);
+			name = "HoaLibrary-Light";
+			sourceTree = "<group>";
+		};
+		99A95986598C49A5A71E7098 /* sources */ = {
+			isa = PBXGroup;
+			children = (
+				65BA28116F8D418DB4858CE8 /* Decoder.hpp */,
+				D19796F3F41A4BF18E22B00F /* Defs.hpp */,
+				E11EA98A586F4A53AE03A1F5 /* Encoder.hpp */,
+				C4B531B19EAE408091509D9C /* Exchanger.hpp */,
+				EDBA1601C0424E39B81BBFB8 /* Harmonics.hpp */,
+				52AD3E941C514207BE92E852 /* Hoa.hpp */,
+				53A7D9C5B83A4A02AE907153 /* Hrir.hpp */,
+				C21B0F1AD99347BA9CB4758B /* HrirIrc1002C2D.hpp */,
+				3BF51EEC7ADB4F7E85E7F559 /* HrirIrc1002C3D.hpp */,
+				70198E094B624826BFE384F9 /* Math.hpp */,
+				A461F25AA1DC40089D13AC6F /* Meter.hpp */,
+				4498BBC4634D45D58AD91A57 /* Optim.hpp */,
+				DC419794076744648FA89202 /* Planewaves.hpp */,
+				0BDA5185E04845C4A061557A /* Processor.hpp */,
+				2A3B60050A134CFB8D9F7515 /* Projector.hpp */,
+				D97691A2DD2B4F358F4F8016 /* Recomposer.hpp */,
+				E61DE24EEC5440B4BCCACBD3 /* Rotate.hpp */,
+				7888D34B6D92411D97BB9EA4 /* Scope.hpp */,
+				4C429A7FBAE64224AADADAD8 /* Signal.hpp */,
+				4B20C7450B914308B8DD79EE /* Source.hpp */,
+				11A4FA796C89441EB27DCF0F /* Tools.hpp */,
+				C929BC6BF80044E09C206D20 /* Vector.hpp */,
+				6A43AC0B319D41B3B4E393B2 /* Voronoi.hpp */,
+				B478CEDAFF7B43A3B3CB7EA1 /* Wider.hpp */,
+			);
+			name = sources;
+			sourceTree = "<group>";
+		};
+		B5F586607A514FEF89CE2547 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				66BC097DD76B4DFAA749368E /* HoaNode.cpp */,
+				4D3A5E1514984C2395F7270A /* HoaElement.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		C87010EEEB2944B188AC9264 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				FF5737C51DDA4E8F00457667 /* HoaElement.h */,
+				FF5737C61DDA4E8F00457667 /* HoaNode.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		D77B7D25946941BEB04A8DC5 /* Cinder-HOA */ = {
+			isa = PBXGroup;
+			children = (
+				3713E715153549299AA75B46 /* lib */,
+				C87010EEEB2944B188AC9264 /* include */,
+				B5F586607A514FEF89CE2547 /* src */,
+			);
+			name = "Cinder-HOA";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* exampleMulti */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "exampleMulti" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = exampleMulti;
+			productInstallPath = "$(HOME)/Applications";
+			productName = exampleMulti;
+			productReference = 8D1107320486CEB800E47090 /* exampleMulti.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "exampleMulti" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* exampleMulti */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* exampleMulti */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66DC7976F0654256B6CB84D4 /* CinderApp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7A1516A81E406E90350F55 /* exampleMultiApp.cpp in Sources */,
+				7D2F90B4FE134108951E4E9A /* HoaNode.cpp in Sources */,
+				4E254CE34C4A4F80BAAD6EA2 /* HoaElement.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = exampleMulti_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder_d.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = exampleMulti;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = exampleMulti_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"NDEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = "\"$(CINDER_PATH)/lib/libcinder.a\"";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.libcinder.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = exampleMulti;
+				STRIP_INSTALLED_PRODUCT = YES;
+				SYMROOT = ./build;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../../..;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				ENABLE_TESTABILITY = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CINDER_PATH = ../../../../..;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++11";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"$(CINDER_PATH)/include\" ../include";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "exampleMulti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "exampleMulti" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

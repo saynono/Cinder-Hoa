@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<template name="Cinder-HOA: Basic" parent="org.libcinder.apptemplates.basicopengl">
+	<requires>com.say-nono.cinder.hoa</requires>
+	<supports os="macosx" />
+	<source replaceContents="true" replaceName="true">src/_TBOX_PREFIX_App.cpp</source>
+</template>
+</cinder>

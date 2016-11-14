@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<cinder>
+<block
+	name="Cinder-HOA"
+	id="com.say-nono.cinder.hoa"
+	git="git@github.com:saynono/CinderHOA.git"
+	author="nono"
+	license="Apache 2.0, LGPL"
+	library="https://github.com/CICM/HoaLibrary-Light"
+	url="https://say-nono.com/"
+	summary="A cinder wrapper for CICM's Higher Order Ambisonics library."
+	>
+	<supports os="macosx" />
+	<copyExclude>samples</copyExclude>
+	<!-- <sourcePattern>lib/HoaLibrary-Light/sources/*.hpp</sourcePattern> -->
+	<headerPattern>lib/HoaLibrary-Light/sources/*.hpp</headerPattern>
+	<header>include/HoaNode.h</header>
+	<source>src/HoaNode.cpp</source>
+	<header>include/HoaElement.h</header>
+	<source>src/HoaElement.cpp</source>
+
+	<platform os="macosx">
+
+	</platform>
+</block>
+<template>templates/Basic GL/template.xml</template>
+</cinder>
