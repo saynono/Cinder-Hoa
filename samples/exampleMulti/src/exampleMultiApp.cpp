@@ -82,7 +82,7 @@ void exampleMultiApp::setupInputs(){
     
     
     audio::GenNodeRef p2 = ctx->makeNode( new audio::GenOscNode( audio::WaveformType::SINE, 440 ) );
-    p2->setName("OSC Sine 220");
+    p2->setName("OSC Sine 0");
     p2->enable();
     
     audio::GenNodeRef p3 = ctx->makeNode( new audio::GenOscNode( audio::WaveformType::SQUARE, 220 ) );
@@ -93,10 +93,10 @@ void exampleMultiApp::setupInputs(){
     p4->enable();
     p4->setName("Microphone");
     
-    //    mPlayers.push_back( p1 );
-    //    mPlayers.push_back( p2 );
-    mPlayers.push_back( p3 );
-    //    mPlayers.push_back( p4 );
+//    mPlayers.push_back( p1 );
+    mPlayers.push_back( p2 );
+//    mPlayers.push_back( p3 );
+//    mPlayers.push_back( p4 );
     
 }
 

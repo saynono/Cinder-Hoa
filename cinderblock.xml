@@ -3,9 +3,9 @@
 <block
 	name="Cinder-HOA"
 	id="com.say-nono.cinder.hoa"
-	git="git@github.com:saynono/CinderHOA.git"
-	author="nono"
-	license="Apache 2.0, LGPL"
+	git="git@github.com:saynono/Cinder-HOA.git"
+	author="Vincent Rebers"
+	license="Modified BSD License"
 	library="https://github.com/CICM/HoaLibrary-Light"
 	url="https://say-nono.com/"
 	summary="A cinder wrapper for CICM's Higher Order Ambisonics library."
