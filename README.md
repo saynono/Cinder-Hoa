@@ -11,7 +11,7 @@ This block was used for an installation I did for [Jason Bruges Studio](http://w
 It has 140 sounds that are placed in space. These are symbolised by prisms which are triggered by a laser.
 
 <a href="https://vimeo.com/196617595?autoplay=1" target="_blank"><img src="https://static1.squarespace.com/static/573d923d1d07c0e136e68703/t/585abd0d3e00be7e29cc1d4e/1482341684158/?format=2500w" 
-alt="Scent Constellation" width="640" height="480" border="10" /></a>
+alt="Scent Constellation" width="640" height="480" border="10" /><br/>https://vimeo.com/196617595</a>
 
 
 This block wraps the amazing ambisonics HoaLibrary by these guys [http://www.mshparisnord.fr/hoalibrary/en/](http://www.mshparisnord.fr/hoalibrary/en/).
