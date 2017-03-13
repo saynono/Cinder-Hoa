@@ -10,12 +10,8 @@ This gives you an what you can do with this block. It is supposed to be fully in
 This block was used for an installation I did for [http://www.jasonbruges.com](Jason Bruges Studio) in Paris for the Grand Musee De Parfum.
 It has 140 sounds that are placed in space. These are symbolised by prisms which are triggered by a laser.
 
-<iframe src="https://player.vimeo.com/video/196617595?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=Mrer59kw2f0
-" target="_blank"><img src="http://img.youtube.com/vi/Mrer59kw2f0/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+<a href="https://player.vimeo.com/video/196617595?title=0&byline=0&portrait=0" target="_blank"><img src="https://static1.squarespace.com/static/573d923d1d07c0e136e68703/t/585abd0d3e00be7e29cc1d4e/1482341684158/?format=2500w" 
+alt="Scent Constellation" width="640" height="480" border="10" /></a>
 
 
 This block wraps the amazing ambisonics HoaLibrary by these guys [http://www.mshparisnord.fr/hoalibrary/en/](http://www.mshparisnord.fr/hoalibrary/en/).
