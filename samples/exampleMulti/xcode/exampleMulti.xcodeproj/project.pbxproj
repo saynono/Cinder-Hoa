@@ -70,8 +70,8 @@
 		EDBA1601C0424E39B81BBFB8 /* Harmonics.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Harmonics.hpp; path = "../../../lib/HoaLibrary-Light/sources/Harmonics.hpp"; sourceTree = "<group>"; };
 		F8B6747D6D8147DFA04E3645 /* exampleMulti_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; path = exampleMulti_Prefix.pch; sourceTree = "<group>"; };
 		FBF01DDE7BC94425895FB27E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FF5737C51DDA4E8F00457667 /* HoaElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaElement.h; path = ../../../src/HoaElement.h; sourceTree = "<group>"; };
-		FF5737C61DDA4E8F00457667 /* HoaNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaNode.h; path = ../../../src/HoaNode.h; sourceTree = "<group>"; };
+		FF778BF21E764EE800B2C5FB /* HoaElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaElement.h; path = ../../../include/HoaElement.h; sourceTree = "<group>"; };
+		FF778BF31E764EE800B2C5FB /* HoaNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaNode.h; path = ../../../include/HoaNode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,8 +246,8 @@
 		C87010EEEB2944B188AC9264 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				FF5737C51DDA4E8F00457667 /* HoaElement.h */,
-				FF5737C61DDA4E8F00457667 /* HoaNode.h */,
+				FF778BF21E764EE800B2C5FB /* HoaElement.h */,
+				FF778BF31E764EE800B2C5FB /* HoaNode.h */,
 			);
 			name = include;
 			sourceTree = "<group>";

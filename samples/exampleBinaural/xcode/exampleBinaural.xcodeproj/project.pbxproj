@@ -70,8 +70,8 @@
 		EE20784052AE4D31A50EDCAD /* HrirIrc1002C2D.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = HrirIrc1002C2D.hpp; path = "../../../lib/HoaLibrary-Light/sources/HrirIrc1002C2D.hpp"; sourceTree = "<group>"; };
 		FACB20445715434CAA8E0E2C /* exampleBinauralApp.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.cpp; name = exampleBinauralApp.cpp; path = ../src/exampleBinauralApp.cpp; sourceTree = "<group>"; };
 		FE0D49BD2F244FAEA9C4DAFB /* Signal.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Signal.hpp; path = "../../../lib/HoaLibrary-Light/sources/Signal.hpp"; sourceTree = "<group>"; };
-		FF5737C21DDA39CC00457667 /* HoaElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaElement.h; path = ../../../src/HoaElement.h; sourceTree = "<group>"; };
-		FF5737C31DDA39CC00457667 /* HoaNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaNode.h; path = ../../../src/HoaNode.h; sourceTree = "<group>"; };
+		FF778BEE1E764A0400B2C5FB /* HoaElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaElement.h; path = ../../../include/HoaElement.h; sourceTree = "<group>"; };
+		FF778BEF1E764A0400B2C5FB /* HoaNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaNode.h; path = ../../../include/HoaNode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,8 +256,8 @@
 		D12EFFAB8D654739B7B4AEA5 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				FF5737C21DDA39CC00457667 /* HoaElement.h */,
-				FF5737C31DDA39CC00457667 /* HoaNode.h */,
+				FF778BEE1E764A0400B2C5FB /* HoaElement.h */,
+				FF778BEF1E764A0400B2C5FB /* HoaNode.h */,
 			);
 			name = include;
 			sourceTree = "<group>";

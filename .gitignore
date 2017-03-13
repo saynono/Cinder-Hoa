@@ -83,3 +83,7 @@ Desktop.ini
 *.log
 *.sql
 *.sqlite
+
+
+# Just for this project
+/samples/CinderProject

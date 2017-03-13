@@ -43,6 +43,7 @@ void exampleBinauralApp::setup()
     
     int numAudioSources = mPlayers.size();
 
+    // creating our HOA Binaural Node.
     mHoaNode = ctx->makeNode( new HoaNodeBinaural( numAudioSources ) );
     mHoaNode->enable();
     
@@ -54,6 +55,7 @@ void exampleBinauralApp::setup()
     
     
     console() << " =========================== ADDING ROUTES =======================" << std::endl;
+    // Adding all the sound sources as cinder audio routes
     for( int i=0;i<mPlayers.size();i++ ){
         mHoaNode->addInputRoute(mPlayers[i]);
     }
@@ -65,6 +67,8 @@ void exampleBinauralApp::setup()
 void exampleBinauralApp::setupInputs(){
     
     auto ctx = audio::Context::master();
+    
+    // loading a simple sound player
 
     string file = "../../../../../samples/data/sound/DrainMagic.ogg";
     audio::SourceFileRef sourceFile = audio::load( loadAsset(file), ctx->getSampleRate() );
@@ -74,6 +78,7 @@ void exampleBinauralApp::setupInputs(){
     p1->start();
     p1->setName("Player1");
     
+    // creating some sounds...
     
     audio::GenNodeRef p2 = ctx->makeNode( new audio::GenOscNode( audio::WaveformType::SINE, 440 ) );
     p2->setName("OSC Sine 220");
@@ -106,7 +111,11 @@ void exampleBinauralApp::setupAudioDevice(){
             deviceWithMaxOutputs = dev;
     }
     
-    getWindow()->setTitle( "Cinder HOA Test. Output[" + deviceWithMaxOutputs->getName() +"]" );
+    
+    // !! Setting it to the defaul output for now...
+    deviceWithMaxOutputs = audio::Device::getDefaultOutput();
+    
+    getWindow()->setTitle( "Cinder HOA Example Binaural. Output[" + deviceWithMaxOutputs->getName() +"]" );
     
     
     auto ctx = audio::master();

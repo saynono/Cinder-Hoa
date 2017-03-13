@@ -93,10 +93,10 @@ void exampleMultiApp::setupInputs(){
     p4->enable();
     p4->setName("Microphone");
     
-//    mPlayers.push_back( p1 );
+    mPlayers.push_back( p1 );
     mPlayers.push_back( p2 );
-//    mPlayers.push_back( p3 );
-//    mPlayers.push_back( p4 );
+    mPlayers.push_back( p3 );
+    mPlayers.push_back( p4 );
     
 }
 
@@ -111,6 +111,10 @@ void exampleMultiApp::setupAudioDevice(){
         if( ! deviceWithMaxOutputs || deviceWithMaxOutputs->getNumOutputChannels() < dev->getNumOutputChannels() )
             deviceWithMaxOutputs = dev;
     }
+    
+    
+    // !! Setting to d
+    deviceWithMaxOutputs = audio::Device::getDefaultOutput();
     
     getWindow()->setTitle( "Cinder HOA Test. Output[" + deviceWithMaxOutputs->getName() +"]" );
     

@@ -3,7 +3,7 @@
 //  CinderProject
 //
 //  Created by say nono on 12.11.16.
-//  Copyright (c) 2016 __MyCompanyName__. All rights reserved.
+//  Copyright (c) 2016 Vincent Rebers. All rights reserved.
 //
 
 #pragma once

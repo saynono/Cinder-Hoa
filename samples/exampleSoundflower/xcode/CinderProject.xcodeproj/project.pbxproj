@@ -69,10 +69,10 @@
 		F546580A801649089FFCB975 /* Tools.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Tools.hpp; path = "../../../lib/HoaLibrary-Light/sources/Tools.hpp"; sourceTree = "<group>"; };
 		FDBE4CA5D0224FBBAE5E8C76 /* Projector.hpp */ = {isa = PBXFileReference; lastKnownFileType = "\"\""; name = Projector.hpp; path = "../../../lib/HoaLibrary-Light/sources/Projector.hpp"; sourceTree = "<group>"; };
 		FF56D25F1DE9C61800588DCB /* exampleSoundflower.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = exampleSoundflower.cpp; path = ../src/exampleSoundflower.cpp; sourceTree = "<group>"; };
+		FF778BF01E764BF900B2C5FB /* HoaElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaElement.h; path = ../../../include/HoaElement.h; sourceTree = "<group>"; };
+		FF778BF11E764BF900B2C5FB /* HoaNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HoaNode.h; path = ../../../include/HoaNode.h; sourceTree = "<group>"; };
 		FFBB45AB1DD779E90074D4C0 /* HoaNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HoaNode.cpp; path = ../../../src/HoaNode.cpp; sourceTree = "<group>"; };
-		FFBB45AC1DD779E90074D4C0 /* HoaNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HoaNode.h; path = ../../../src/HoaNode.h; sourceTree = "<group>"; };
 		FFBB45B41DD79A710074D4C0 /* HoaElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HoaElement.cpp; path = ../../../src/HoaElement.cpp; sourceTree = "<group>"; };
-		FFBB45B51DD79A710074D4C0 /* HoaElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HoaElement.h; path = ../../../src/HoaElement.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,9 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				FFBB45AB1DD779E90074D4C0 /* HoaNode.cpp */,
-				FFBB45AC1DD779E90074D4C0 /* HoaNode.h */,
 				FFBB45B41DD79A710074D4C0 /* HoaElement.cpp */,
-				FFBB45B51DD79A710074D4C0 /* HoaElement.h */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -259,6 +257,8 @@
 		ED8F685765104018B8E8226A /* include */ = {
 			isa = PBXGroup;
 			children = (
+				FF778BF01E764BF900B2C5FB /* HoaElement.h */,
+				FF778BF11E764BF900B2C5FB /* HoaNode.h */,
 				B41918BDB5AA4C8E8218F2EA /* HoaWrapper.h */,
 			);
 			name = include;

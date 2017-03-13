@@ -79,17 +79,16 @@ void CinderProjectApp::setup()
     
     console() << " =========================== ADDING ROUTES =======================" << std::endl;
     console() << " ===> " << mInputDevice->getNumInputChannels() << std::endl;
-//    for( int i=0;i<mPlayers.size();i++ ){
-//        console() << "Player["<<i<<"] has channels " << mPlayers[i]->getNumChannels() << std::endl;
-//        mHoaNode->addInputRoute(mPlayers[i],min(i,(int)mPlayers[i]->getNumChannels()-1));
-//    }
     
-    
-//    mHoaNode->addInputRoute(mPlayers[0]);
-    mHoaNode->addInputRoute(mPlayers[1],0);
-    mHoaNode->addInputRoute(mPlayers[2],1);
-    mHoaNode->addInputRoute(mPlayers[3],2);
-    mHoaNode->addInputRoute(mPlayers[4],3);
+    int cnt = 0;
+    for( auto player: mPlayers ){
+        mHoaNode->addInputRoute(player,cnt++);
+        
+    }
+//    mHoaNode->addInputRoute(mPlayers[1],0);
+//    mHoaNode->addInputRoute(mPlayers[2],1);
+//    mHoaNode->addInputRoute(mPlayers[3],2);
+//    mHoaNode->addInputRoute(mPlayers[4],3);
     
     
     ctx->enable();
@@ -100,51 +99,8 @@ void CinderProjectApp::setupInputs(){
     auto ctx = audio::Context::master();
     
     
+    // this part is where you add the Soundflower Channels as audio inputs.
     
-    
-    
-    
-    for( int i=0;i<1;i++){
-        //        audio::BufferRef buffer = sourceFile->loadBuffer();
-        //        audio::BufferPlayerNodeRef p = ctx->makeNode( new audio::BufferPlayerNode( buffer ) );
-        //        p->setLoopEnabled();
-        //        int pos = mRandom.nextInt(p->getNumFrames());
-        //        console() << i << " => Pos : " << pos << std::endl;
-        //        p->start();
-        //        p->seek( pos );
-        int sine = 400 + i*i;
-        audio::GenNodeRef p = ctx->makeNode( new audio::GenOscNode( audio::WaveformType::SINE, sine ) );
-        p->setName("OSC Sine " + toString(sine));
-        p->enable( 1 );
-        mPlayers.push_back( p );
-    }
-    
-//    string file = "../../../../../samples/data/sound/DrainMagic.ogg";
-//    audio::SourceFileRef sourceFile = audio::load( loadAsset(file), ctx->getSampleRate() );
-//    audio::BufferRef buffer = sourceFile->loadBuffer();
-//    audio::BufferPlayerNodeRef p1 = ctx->makeNode( new audio::BufferPlayerNode( buffer ) );
-//    p1->setLoopEnabled();
-//    p1->start();
-//    p1->setName("Player1");
-    
-    
-    audio::GenNodeRef p2 = ctx->makeNode( new audio::GenOscNode( audio::WaveformType::SINE, 440 ) );
-    p2->setName("OSC Sine 220");
-    p2->enable();
-    
-    audio::GenNodeRef p3 = ctx->makeNode( new audio::GenOscNode( audio::WaveformType::SQUARE, 220 ) );
-    p3->setName("OSC Square 220");
-    p3->enable();
-    
-    audio::InputDeviceNodeRef p4 = ctx->createInputDeviceNode(mInputDevice);
-    p4->enable();
-    p4->setName("Channel 1");
-
-    
-//    auto format = ci::audio::Node::Format().channels( 1 );
-//    auto channelRouter = ctx->makeNode( new audio::ChannelRouterNode( format ) );
-//    mSamplePlayer >> mChannelRouter->route( 0, 0, 1);
- 
     auto format = ci::audio::Node::Format().channels( mInputDevice->getNumInputChannels() );
     format.setChannelMode(audio::Node::ChannelMode::MATCHES_INPUT);
     audio::InputDeviceNodeRef input = ctx->createInputDeviceNode(mInputDevice,format);
@@ -152,12 +108,8 @@ void CinderProjectApp::setupInputs(){
 
     
     for( int i=0;i<4;i++){
-////        auto format = ci::audio::Node::Format().channels( mInputDevice->getNumInputChannels() );
         auto format = ci::audio::Node::Format().channels( mInputDevice->getNumInputChannels() );
         format.setChannelMode(audio::Node::ChannelMode::MATCHES_INPUT);
-//        audio::InputDeviceNodeRef input = ctx->createInputDeviceNode(mInputDevice,format);
-//        input->enable();
-//        input->setName("Channel "+ toString(i+1));
         audio::GainNodeRef gain = ctx->makeNode( new audio::GainNode(format) );
         input >> gain;
         gain->setName("Channel "+ toString(i+1));
@@ -179,9 +131,13 @@ void CinderProjectApp::setupAudioDevice(){
             deviceWithMaxOutputs = dev;
     }
     
-    
+    // This will tell the cinder to use 64ch Soundflower as input
     mInputDevice = audio::Device::findDeviceByName("Soundflower (64ch)");
+    
+    // I am using a Scarlet Sound card...
     audio::DeviceRef outputDevice = audio::Device::findDeviceByName("Scarlett 18i20 USB");
+    
+    // If the system can't find this device it will switch to either the Built-in output or the default option.
     if( outputDevice == nullptr ){
         outputDevice = audio::Device::findDeviceByName("Built-in Output");
     }
@@ -189,31 +145,19 @@ void CinderProjectApp::setupAudioDevice(){
         outputDevice = audio::Device::getDefaultOutput();
     }
 
-    getWindow()->setTitle( "Cinder HOA Test. Output[" + outputDevice->getName() +"]" );
+    getWindow()->setTitle( "Cinder HOA Soundflower Example. Output[" + outputDevice->getName() +"]" );
 
 
     auto ctx = audio::master();
-//    audio::OutputDeviceNodeRef multichannelOutputDeviceNode = ctx->createOutputDeviceNode( deviceWithMaxOutputs, audio::Node::Format().channels( deviceWithMaxOutputs->getNumOutputChannels() ) );
     auto format = audio::Node::Format().channels( outputDevice->getNumOutputChannels());
     audio::OutputDeviceNodeRef multichannelOutputDeviceNode = ctx->createOutputDeviceNode( outputDevice, format );
     ctx->setOutput( multichannelOutputDeviceNode );
     mOutputDevice = outputDevice;
+    
 }
 
 void CinderProjectApp::update()
 {
-    
-//    audio::InputDeviceNodeRef mic1 = (audio::InputDeviceNodeRef) mPlayers[0];
-    
-//    auto sources = mHoaNode->getHoaInputs();
-//    float scale = getWindowWidth()*mDisplayScale;
-//    for( auto s: sources ){
-//        vec3 pos = s->mHoaElement->getPosition();
-//        pos = glm::rotate( pos, .01f*length(pos), vec3(0,0,1));
-//        vec2 pos2D( pos.x*scale, pos.y*scale );
-//        s->mHoaElement->setPosition(pos);
-//    }
-//    mHoaNode->updatePositions();
 }
 
 void CinderProjectApp::draw()
@@ -245,7 +189,7 @@ void CinderProjectApp::draw()
     
     
     auto sources = mHoaNode->getHoaInputs();
-    int cnt = 0;
+    
     for( const auto& s: sources ){
         vec3 pos = s->mHoaElement->getPosition();
         vec2 pos2D(pos.x*scale,pos.y*scale);
@@ -259,7 +203,6 @@ void CinderProjectApp::draw()
         }else{
             gl::drawStrokedCircle(pos2D, 10);
         }
-//        gl::drawSolidCircle(pos2D, 10);
         gl::color(1, 1, 1);
         gl::drawString( s->mInput->getName(), pos2D+vec2(20,0));
    }
@@ -267,6 +210,8 @@ void CinderProjectApp::draw()
 }
 
 void CinderProjectApp::mouseUp( MouseEvent e ){
+    
+    // enabling or disabling sound sources
     if( e.isRight() || e.isControlDown() ){
         if( mHoaOutputHover != nullptr ){
             mHoaOutputHover->bEnabled = !mHoaOutputHover->bEnabled;
@@ -278,6 +223,8 @@ void CinderProjectApp::mouseUp( MouseEvent e ){
 
 void CinderProjectApp::mouseDrag( MouseEvent e ){
 
+    // dragging sound sources around...
+    
     vec2 mPos = vec2((float)e.getPos().x,(float)e.getPos().y) - vec2(getWindowWidth()/2, getWindowHeight()/2);
     float scale = getWindowWidth()*mDisplayScale;
     
