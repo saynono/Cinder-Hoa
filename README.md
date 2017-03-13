@@ -1,7 +1,7 @@
 Cinder-HOA
 ==========
 
-HOA (Higher Order Ambisonics) block for cinder.
+HOA (Higher Order Ambisonics) block for [cinder](http://libcinder.org/).
 
 [Wiki says](https://en.wikipedia.org/wiki/Ambisonics): Ambisonics is a full-sphere surround sound technique.
 
@@ -50,8 +50,8 @@ At the end this demo is the same as the multichannel example just with soundflow
 Dependencies
 ------------
 
-Cinder 0.9.0 (http://libcinder.org/)
-HoaLibrary-Light (https://github.com/CICM/HoaLibrary-Light)
+[Cinder 0.9.0](http://libcinder.org/)
+[HoaLibrary-Light](https://github.com/CICM/HoaLibrary-Light)
 
 
 License
